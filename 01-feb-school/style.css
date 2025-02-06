@@ -1,0 +1,53 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: Roboto;
+    margin: 2em;
+    background: #FFFFFF;
+  }
+  
+  h1 {
+    font-style: bold;
+    color: #0D9C90;
+  }
+  
+  .polaroid a {
+    background: #FFFFFF;
+    display: inline;
+    float: left;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    z-index: 0;
+    position: relative;
+  }
+  .polaroid a:after {
+    color: #000000;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+  .polaroid img {
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  }
+  
